@@ -1,6 +1,13 @@
-# The global `.github` for all Homebridge projects
+<p align="center">
+  <a href="https://homebridge.io"><img src="https://raw.githubusercontent.com/homebridge/branding/latest/logos/homebridge-color-round-stylized.png" height="140"></a>
+</p>
+<span align="center">
 
-This projects contains any sort of common and community health files for the Homebridge organization
+# `.github`
+
+</span>
+
+This project contains any sort of common and community health files for the Homebridge organization
 to be maintained in a central space.
 
 ## Reusable GitHub Workflows
