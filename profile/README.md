@@ -1,12 +1,9 @@
-## Hi there 👋
+### Bringing HomeKit support where there is none
 
-<!--
+Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.
 
-**Here are some ideas to get you started:**
+Homebridge is a lightweight Node.js server that you can run on your home network that emulates the iOS HomeKit API.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+It supports plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of smart home devices.
+
+For more information, see the [Homebridge Wiki](https://github.com/homebridge/homebridge/wiki).
