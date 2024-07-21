@@ -31,7 +31,7 @@
 
 ## Running tests
 
-In order to contribute, you'll need to checkout the source from GitHub and
+In order to contribute, you'll need to check out the source from GitHub and
 install dependencies using npm:
 
 ```bash
@@ -47,6 +47,7 @@ See [SECURITY.md](SECURITY.md)
 
 **Happy coding**!
 
+[link-typescript]: https://www.typescriptlang.org/
 [link-eslint]: https://eslint.org/
 [typedoc-formatting]: https://typedoc.org/guides/doccomments/
 <!-- TODO update wiki page links, currently they point to the HAP-NodeJS repo! -->

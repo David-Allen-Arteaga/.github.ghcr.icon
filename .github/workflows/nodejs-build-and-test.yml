@@ -29,7 +29,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node_version: [18, 20, 22]
+        # (BP) Bug in node 22.5.0 which is also the action cached version
+        # This can be reverted back to `22` once 22.5.1 becomes the cached version
+        node_version: [18, 20, 22.5.1]
 
     runs-on: ${{ inputs.runs_on }}
 
