@@ -3,10 +3,10 @@ workflow:
   - .github/workflows/*
 
 beta:
-- base-branch: 'beta*'
+  - base-branch: 'beta*'
 
 alpha:
-- base-branch: 'alpha*'
+  - base-branch: 'alpha*'
 
 latest:
-- base-branch: 'latest'
+  - base-branch: latest

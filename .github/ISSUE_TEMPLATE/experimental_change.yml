@@ -1,7 +1,7 @@
 name: 🔬 Experimental Change
 description: Suggest an experimental or visionary improvement for this project.
 
-labels: ["vision", "enhancement"]
+labels: [vision, enhancement]
 
 body:
   - type: markdown

@@ -4,12 +4,12 @@
  * This scripts queries the npm registry to pull out the latest version for a given tag.
  */
 
-const assert = require('node:assert')
-const child_process = require('node:child_process')
-const fs = require('node:fs')
-const process = require('node:process')
+import assert from 'node:assert'
+import child_process from 'node:child_process'
+import fs from 'node:fs'
+import process from 'node:process'
 
-const semver = require('semver')
+import semver from 'semver'
 
 const BRANCH_VERSION_PATTERN = /^([A-Z]+)-(\d+\.\d+\.\d+)$/i
 
@@ -19,9 +19,9 @@ const packageJSON = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 const refArgument = process.argv[2]
 const tagArgument = process.argv[3] || 'latest'
 
-if (refArgument == null) {
+if (refArgument === null) {
   console.error('ref argument is missing')
-  console.error('Usage: npm-version-script.js <ref> [tag]')
+  console.error('Usage: npm-version-script-esm.js <ref> [tag]')
   process.exit(1)
 }
 
@@ -50,7 +50,7 @@ function desiredTargetVersion(ref) {
   const branchName = ref.slice('refs/heads/'.length)
 
   const results = branchName.match(BRANCH_VERSION_PATTERN)
-  if (results != null) {
+  if (results !== null) {
     if (results[1] !== tagArgument) {
       console.warn(`The base branch name (${results[1]}) differs from the tag name ${tagArgument}`)
     }

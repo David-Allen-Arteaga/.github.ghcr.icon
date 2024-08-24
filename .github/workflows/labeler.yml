@@ -9,9 +9,9 @@ name: Labeler
 on:
   workflow_call:
     secrets:
-          token:
-            description: 'The GitHub Token which is used for the action bot'
-            required: false
+      token:
+        description: The GitHub Token which is used for the action bot
+        required: false
 jobs:
   label:
     name: Labeler

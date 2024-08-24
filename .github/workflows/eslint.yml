@@ -4,12 +4,12 @@ on:
   workflow_call:
     inputs:
       node_version:
-        description: 'Defines the node version setup to run the linter'
+        description: Defines the node version setup to run the linter
         default: 18
         required: false
         type: number
       install_cmd:
-        description: "Defines the install command to be run. Defaults to `npm ci`."
+        description: Defines the install command to be run. Defaults to `npm ci`.
         default: npm ci
         required: false
         type: string
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ inputs.node_version }}
           registry-url: 'https://registry.npmjs.org'
-          cache: 'npm'
+          cache: npm
 
       - name: install
         run: ${{ inputs.install_cmd }}

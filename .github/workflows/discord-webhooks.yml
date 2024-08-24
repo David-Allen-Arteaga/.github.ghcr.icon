@@ -56,22 +56,22 @@ jobs:
   github-releases-to-discord:
     runs-on: ubuntu-latest
     steps:
-    - name: Discord notification
-      uses: sarisia/actions-status-discord@v1
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        status: ${{ inputs.status || 'Success'}}
-        content: ${{ inputs.content || ''}}
-        title: ${{ inputs.title || ''}}
-        description: |
-          ${{ inputs.description || ''}}
-        image: ${{ inputs.image || ''}}
-        color: ${{ inputs.color || '4726621'}}
-        url: ${{ inputs.url || 'https://homebridge.io'}}
-        username: ${{ inputs.username || 'Homebridge'}}
-        avatar_url: ${{ inputs.avatar_url || 'https://raw.githubusercontent.com/homebridge/branding/latest/logos/homebridge-color-round-stylized.png'}}
-        nofail: ${{ inputs.nofail || true}}
-        noprefix: ${{ inputs.noprefix || false}}
-        nodetail: ${{ inputs.nodetail || false}}
-        nocontext: ${{ inputs.nocontext || false}}
-        notimestamp: ${{ inputs.notimestamp || false}}
+      - name: Discord notification
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ inputs.status || 'Success'}}
+          content: ${{ inputs.content || ''}}
+          title: ${{ inputs.title || ''}}
+          description: |
+            ${{ inputs.description || ''}}
+          image: ${{ inputs.image || ''}}
+          color: ${{ inputs.color || '4726621'}}
+          url: ${{ inputs.url || 'https://homebridge.io'}}
+          username: ${{ inputs.username || 'Homebridge'}}
+          avatar_url: ${{ inputs.avatar_url || 'https://raw.githubusercontent.com/homebridge/branding/latest/logos/homebridge-color-round-stylized.png'}}
+          nofail: ${{ inputs.nofail || true}}
+          noprefix: ${{ inputs.noprefix || false}}
+          nodetail: ${{ inputs.nodetail || false}}
+          nocontext: ${{ inputs.nocontext || false}}
+          notimestamp: ${{ inputs.notimestamp || false}}

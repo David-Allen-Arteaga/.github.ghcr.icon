@@ -13,7 +13,7 @@ on:
         required: false
     secrets:
       token:
-        description: 'The GitHub Token which is used for the action bot'
+        description: The GitHub Token which is used for the action bot
         required: false
 
 jobs:
@@ -29,10 +29,10 @@ jobs:
       - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.token }}
-          stale-issue-label: 'stale'
+          stale-issue-label: stale
           exempt-issue-labels: pinned,security,long running,discussion,vision,pending,verified,
-          stale-issue-message: 'This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions.'
-          close-issue-message: 'This issue has been closed as no further activity has occurred.'
+          stale-issue-message: This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions.
+          close-issue-message: This issue has been closed as no further activity has occurred.
           days-before-issue-stale: ${{ inputs.days-before-issue-stale }}
           days-before-issue-close: ${{ inputs.days-before-issue-close }}
 

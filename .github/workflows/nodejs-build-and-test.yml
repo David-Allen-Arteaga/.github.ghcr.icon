@@ -4,23 +4,23 @@ on:
   workflow_call:
     inputs:
       enable_coverage:
-        description: 'A boolean value indicating if coverage reporting shall be enabled. If provided the secret token is required.'
+        description: A boolean value indicating if coverage reporting shall be enabled. If provided the secret token is required.
         default: false
         required: false
         type: boolean
       runs_on:
-        description: "Defines the operating system the action should run on. Defaults to ubuntu-latest."
-        default: "ubuntu-latest"
+        description: Defines the operating system the action should run on. Defaults to ubuntu-latest.
+        default: ubuntu-latest
         required: false
         type: string
       install_cmd:
-        description: "Defines the install command to be run. Defaults to `npm ci`."
+        description: Defines the install command to be run. Defaults to `npm ci`.
         default: npm ci
         required: false
         type: string
     secrets:
       token:
-        description: 'The GitHub Token which is used to push to Coveralls'
+        description: The GitHub Token which is used to push to Coveralls
         required: false
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           registry-url: 'https://registry.npmjs.org'
-          cache: 'npm'
+          cache: npm
 
       - name: install
         run: ${{ inputs.install_cmd }}
