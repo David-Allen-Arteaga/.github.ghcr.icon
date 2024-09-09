@@ -15,7 +15,7 @@ to be maintained in a central space.
 This project provides several GitHub workflows that can be [reused](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).
 
 This example, which is cited from the above-linked GitHub documentation page, shows how such
-reusable workflow files are generally used: 
+reusable workflow files are generally used:
 
 ```yaml
 name: Call a reusable workflow
